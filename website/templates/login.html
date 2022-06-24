@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+    %}
+    <form method="POST">
+    <div class="position-relative"></div>
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <h3 align="center">Login</h3>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="form-control"
+          placeholder="Enter Email"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control"
+          placeholder="Enter Password"
+        />
+        <br />
+        <div align="center">
+          <button class="btn" style="background-color: #9786c9; color:aliceblue" type="submit">Login</button>
+        </div>
+        </div>
+        <br />
+        <div align="center">
+        <a href="/home" style="color:#9786c9">I'm a guest</a>
+      </div>
+      <br />
+      <div align="center">
+        <a href="/admin-enter" style="color:#9786c9">I'm an administrator</a>
+      </div>
+      </div>
+     
+    </div>
+
+    </form>
+    {% endblock %}

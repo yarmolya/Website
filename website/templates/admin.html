@@ -1,0 +1,24 @@
+{% extends "posts_div.html" %} {% block title %}Admin{% endblock %} 
+{% block content
+    %}
+    <form method="POST">
+    <div class="position-relative"></div>
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <h3 align="center">Enter a password for administrators</h3>
+      <br />
+      <div class="form-group">
+        
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control"
+          placeholder="Enter Password"
+        />
+        <br />
+        <div align="center">
+          <button class="btn" style="background-color: #9786c9; color:aliceblue" type="submit">Enter</button>
+        </div>
+    </div>
+</div>
+{%endblock%}

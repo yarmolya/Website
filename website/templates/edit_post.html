@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+
+    <div class="mx-auto" style="margin-top: 30px;">
+
+    <h1 align="center" style="color:#9786c9">Edit a Topic</h1>
+    
+    <form method="POST">
+      <br>
+      <input type="text" name="title"
+             placeholder="Title"
+             style="width: 100%;
+               padding: 10px 15px;
+               margin: 5px 0;
+               box-sizing: border-box;"
+             value="{{ request.form['title'] }}"></input>
+      <br>
+      <textarea name="content"
+                placeholder="Message content"
+                style="width: 100%;
+               padding: 10px 15px;
+               margin: 5px 0;
+               box-sizing: border-box;"
+                >{{ request.form['content'] }}</textarea>
+      <br>
+      <br />
+      <div align="center">
+        <button type="submit" class="btn btn-lg" style="background-color:#9786c9; color:aliceblue">Edit</button>
+      </div>
+    </form>
+    <br />
+    <div align="center">
+      <a href="/home"
+        ><button type="button" class="btn btn-sm btn-secondary">Back</button></a
+      >
+    </div>
+</div>
+    {% endblock %}
